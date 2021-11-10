@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ConversionActivity">
+    
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="49dp">
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:background="#ccccff"
+            android:gravity="center"
+            android:text="Converter"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="100dp"
+        >
+
+        <Button
+            android:id="@+id/btnConvert"
+            android:layout_width="201dp"
+            android:layout_height="76dp"
+            android:text="Convert"
+            android:backgroundTint="@color/cardview_shadow_end_color"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="201dp"
+            android:layout_height="76dp"
+            android:text="Exit"
+            android:backgroundTint="@color/cardview_shadow_end_color"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit (metres): "
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="205dp" />
+
+        <EditText
+            android:id="@+id/txtAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="30dp"
+
+            tools:layout_editor_absoluteX="202dp"
+            tools:layout_editor_absoluteY="205dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit (cm): "
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="330dp" />
+
+        <EditText
+            android:id="@+id/txtAmount1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="30dp"
+            tools:layout_editor_absoluteX="202dp"
+            tools:layout_editor_absoluteY="330dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
